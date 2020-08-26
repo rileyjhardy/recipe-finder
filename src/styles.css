@@ -1,0 +1,84 @@
+.App {
+
+
+
+    font-family: 'Source Sans Pro', sans-serif;
+        
+      }
+    .header {
+      
+      
+      background-color: cornflowerblue;
+      
+    }
+    
+    .header-text {
+      font-size: 80px;
+    }
+    
+    
+    
+    .results {
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "header header""ing pic""inst inst""button button";
+    padding: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    @media (max-width: 1000px){
+      .results {
+    grid-template-columns: 100%;
+        grid-template-areas: "header header""pic pic""ing ing""inst inst""button button";
+      }
+    }
+    
+    
+    .inner-boundary {
+    width: 75%;
+    margin: auto;
+    max-width: 850px;
+    }
+    #addbutton {
+      grid-area: button;
+    
+    }
+    
+    .inst {
+    grid-area: inst;
+    }
+    .ing {
+      grid-area: ing;
+      
+    }
+    .head {
+      grid-area: header;
+    }
+    
+    .fav-list {
+      cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+    transition: height 2s linear 1s;
+    }
+    .center-class {
+      margin: auto;
+    }
+    .shop-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    
+    }
+    
+    .display-no {
+      height: 0;
+      display: none;
+    }
+    .favlist-dropdown {
+    font-size: 15px;
+    
+    }
